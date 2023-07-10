@@ -12,6 +12,15 @@
     background-size: cover;
     background-position: center;
 }
+span + span {
+    margin-left: 10px;
+}
+#slash, #ru, #en {
+    font-weight: 400;
+}
+#en {
+    color: #bdae82;
+}
 #logo {
     display: flex;
     flex-grow: 21;
@@ -165,6 +174,8 @@
     margin: auto 10px;
 }
 .H2 {
+    font-weight: 500;
+    font-size: 30px;
     margin-top: 50px;
     color: white;
 }
@@ -215,7 +226,7 @@
     margin: 0 auto;
 }
 .button_Price {
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     padding: 15px 60px;
     background-color: #bdae82;
     font-size: 18px;
