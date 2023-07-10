@@ -1,0 +1,241 @@
+/* Вопросы:
+1. Что за чёрные полоски в самом верху страницы, если менять масштаб через Ctrl, то их виднео сильнее
+2. Как сделать отдельно надпись en одного цвета, а ru другого цвета при выборе
+3. Можно ли сделать логотип тоже анимированным, либо же для этого нужно каждую деталь делать фигурами?
+4. Можно ли было сделать */
+#bg {
+    background-color: black;
+}
+.header {
+    min-width: 100vh;
+    min-height: 100vh;
+    background-image: url(/Business_layout/css/images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+#logo {
+    display: flex;
+    flex-grow: 21;
+}
+
+.nav, .nav_link {
+    transition: .2s;
+    flex-grow: 1;
+    margin: 10px auto 0px auto;
+    max-width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 10;
+}
+.nav_link_Skills:hover, .nav_link_Portfolio:hover, .nav_link_Video:hover, .nav_link_Price:hover, .nav_link_Contacts:hover {
+    transition: all .2s;
+    cursor: pointer;
+    color: #bdae82;  
+} 
+.AboutMe {
+    max-width: 500px;
+    max-height: 330px;
+    margin: 300px auto auto 100px;
+}
+.Info {
+    display: flex;
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+    margin: 0 auto 40px 0px; 
+}
+.H1 {
+    display: flex;
+    font-size: 85px;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto 20px 0px; 
+}
+.button_1 {
+    transition: all .3s;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    color: black;
+    background-color: #bdae82;
+    padding: 20px 20px;
+    font-size: 22px;
+}
+.button_1:hover {
+    transition: all .3s;
+    cursor: pointer;
+    color: white;
+}
+.button_2 {
+    justify-content: center;
+    margin-top: 100px;
+    transition: all .3s;
+    display: inline-block;
+    color: #bdae82;
+    background-color: black;
+    border-color: #bdae82;
+    padding: 20px 100px;
+    font-size: 20px;
+}
+.button_2:hover {
+    justify-content: center;
+    margin-top: 100px;
+    transition: all .3s;
+    display: inline-block;
+    color: black;
+    background-color: #bdae82;
+    padding: 20px 100px;
+    font-size: 20px;
+}
+.Skills, .Portfolio, .Video, .Price {
+    margin: 100px auto auto auto;
+    max-width: 900px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 45px;
+    color: #bdae82;
+    font-weight: 700;
+}
+.Skills span, .Portfolio span, .Video span, .Price span  {
+    display: inline-block;
+    vertical-align: middle;
+}
+.Skills::before, .Skills::after, .Portfolio::before, .Portfolio::after, .Video::before, .Video::after, .Price::after, .Price::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 3px;
+    background-color: #bdae82;
+    position: relative;
+}
+.Skills::before, .Portfolio::before, .Video::before, .Price::before {
+    margin-left: -100%;
+    left: -14px;
+}
+.Skills::after, .Portfolio::after, .Video::after, .Price::after {
+    margin-right: -100%;
+    right: -14px;
+}
+.Skills_img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.column {
+    flex-basis: 25%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.Skills_info {
+    margin: 50px auto;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 40px;
+    font-weight: 100px;
+}
+.button_2_Container {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.Portfolio_img {
+    text-align: center;
+}
+.Portfolio_img_1line {
+    width: 32%;
+    display: inline-block;
+    margin: 50px 10px 20px 10px;
+}
+.Portfolio_img_2line {
+    width: 32%;
+    display: inline-block;
+    margin: auto 10px;
+}
+.H2 {
+    margin-top: 50px;
+    color: white;
+}
+.Price_Price {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.Price_1, .Price_2, .Price_3 {
+    display: inline-block;
+    max-width: auto;
+    margin: 100px auto;
+    padding: 70px 130px;
+    border: 4px solid #bdae82;
+}
+.H2_Price {
+    font-size: 33px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.H1_Price {
+    font-family: 'Inter', sans-serif;
+    font-size: 33px;
+    color: #bdae82;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Info_Price {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    line-height: 36px;
+}
+.Video_Video {
+    max-width: 1500px;
+    margin: 50px auto auto auto;
+}
+.Video_Video_Video {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+.button_Price {
+    margin: 0 auto;
+    padding: 15px 60px;
+    background-color: #bdae82;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Contacts_Container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100vh;
+    justify-content: center;
+    max-height: 100vh;
+}
+.Contacts_images {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+.images_Contacts {
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+    width: 100vh;
+    height: auto;
+}
